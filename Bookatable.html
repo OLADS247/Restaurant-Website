@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <section class="reservation-section">
+   <div class="reservation-container">
+    <div class="form-wrapper">
+      <h2>BOOK TABLE</h2>
+      <form action="https://formsubmit.co/olaleyeds.24@student.funaab.edu.ng" method="POST">
+        <div class="input-group">
+          <input type="date" name="date" required>
+          <input type="text" name="name" placeholder="Name" required>
+          <!-- Prevent Captcha -->
+          <input type="hidden" name="_captcha" value="false">
+
+          <!-- Redirect after successful submit -->
+          <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+
+        </div>
+        <div class="input-group">
+          <input type="time" name="time" required>
+          <input type="tel" name="phone" placeholder="Phone" required>
+        </div>
+        <div class="input-group">
+          <select name="people" required>
+            <option selected disabled>People</option>
+            <option>1 person</option>
+            <option>2 people</option>
+            <option>3 people</option>
+            <option>4 people</option>
+          </select>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+
+        <!-- Hidden anti-spam & redirect settings -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="thank-you.html">
+        <input type="hidden" name="_next" value="https://formsubmit.co/thank-you">
+
+        <button type="submit">BOOK TABLE</button>
+      </form>
+    </div>
+
+    <!--- Image on the side (same class name preserved) -->
+    <div class="image-wrapper">
+      <img src="./image/booking-01.jpg.webp" alt="Reservation Image">
+    </div>
+
+  </div>
+</section>
+ 
+</body>
+</html>
