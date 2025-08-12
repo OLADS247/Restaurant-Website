@@ -6,8 +6,9 @@ Designed to showcase menu items, enable table reservations, and give customers a
 ---
 
 ## 🌐 Live Demo
-[View Live Site on Vercel](https://github.io/olads247/Restaurant Website) <!-- Replace with your actual link -->
+[View Live Site with this link](https://olads247.github.io/Restaurant-Website/) <!-- Replace with your actual link -->
 
 ---
 
 ## 📂 Project Structure
+
