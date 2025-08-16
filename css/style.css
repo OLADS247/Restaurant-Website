@@ -1085,5 +1085,104 @@ input, textarea, button {
     padding: 12px;
   }
 }
+/* ============ RESPONSIVENESS ============ */
+
+/* Mobile First – everything stacks by default */
+
+/* Tablets (≥ 600px) */
+@media (min-width: 600px) {
+  /* Navbar */
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /* Menu grid */
+  .menu-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Reservation form */
+  .reservation-form {
+    max-width: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .reservation-form input,
+  .reservation-form textarea,
+  .reservation-form button {
+    grid-column: span 2; /* full width by default */
+  }
+  .reservation-form input[type="text"],
+  .reservation-form input[type="email"] {
+    grid-column: span 1; /* two side-by-side */
+  }
+
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+/* Small laptops / Large tablets (≥ 768px) */
+@media (min-width: 768px) {
+  /* Hero section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 2rem;
+  }
+
+  /* About section */
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  /* Contact/map */
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Desktops (≥ 1024px) */
+@media (min-width: 1024px) {
+  /* Menu grid expands */
+  .menu-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Reservation form wider */
+  .reservation-form {
+    max-width: 800px;
+  }
+
+  /* Footer */
+  footer {
+    justify-content: space-around;
+  }
+}
+
+/* Large Screens (≥ 1440px) */
+@media (min-width: 1440px) {
+  .menu-items {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
 
 
